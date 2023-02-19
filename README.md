@@ -11,7 +11,7 @@ ChatGPT 串接到 Discord 上面，使得團隊在協作、溝通、效率上都
 
 ## 介紹
 在 Discord 裡的每個頻道中導入 ChatGPT Bot，只要在輸入框輸入 `/chat` 就會 有一個 `/chat message` 的關鍵字自動帶入，直接輸入文字即可與 ChatGPT 互動，如下圖所示：
-![Demo](https://explainthis.s3-ap-northeast-1.amazonaws.com/c16779028e5b4c68a8b6fa5725bab8d3.gif)
+![Demo](https://github.com/TheExplainthis/ChatGPT-Discord-Bot/blob/main/demo/chatgpt-discord-bot.gif)
 
 
 ## 安裝步驟
