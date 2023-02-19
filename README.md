@@ -1,10 +1,9 @@
 # ChatGPT Discord Bot
-<div align="center">
+
 中文 | [English](README.en.md)
 
 [![license](https://img.shields.io/pypi/l/ansicolortags.svg)](LICENSE) [![Release](https://img.shields.io/github/v/release/TheExplainthis/ChatGPT-Discord-Bot)](https://github.com/TheExplainthis/ChatGPT-Discord-Bot/releases/)
 
-</div>
 
 ChatGPT 串接到 Discord 上面，使得團隊在協作、溝通、效率上都能夠快速的提升，根據下面的安裝步驟，你也能在自己的 Discord 當中去導入 ChatGPT。
 
@@ -64,13 +63,13 @@ ChatGPT 串接到 Discord 上面，使得團隊在協作、溝通、效率上都
             - value: `text-davinci-003`  
         3. ChatGPT 回傳的文字限制
             - key: `OPENAI_MAX_TOKENS`
-            - value: 128
+            - value: `128`
         4. Discord Token:
             - key: `DISCORD_TOKEN`
             - value: `[由上方步驟一取得] MTA3NXXX`
 2. 開始執行
     1. 點擊上方的 `Run`
-    2. 成功後右邊畫面會顯示 `Hello. I am alive!`，並將畫面中上方的`網址複製`下來，下一步驟會用到
+    2. 成功後右邊畫面會顯示 `Hello. I am alive!`，並將畫面中上方的**網址複製**下來，下一步驟會用到
     - 注意：若一小時內沒有任何請求，則程式會中斷，因此需要下步驟
 3. CronJob 定時發送請求
     1. 註冊/登入 [cron-job.org](https://cron-job.org/en/)

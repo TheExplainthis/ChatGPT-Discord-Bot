@@ -1,10 +1,9 @@
 # ChatGPT Discord Bot
-<div align="center">
-中文 | [English](README.en.md)
+
+[中文](README.md) | English
 
 [![license](https://img.shields.io/pypi/l/ansicolortags.svg)](LICENSE) [![Release](https://img.shields.io/github/v/release/TheExplainthis/ChatGPT-Discord-Bot)](https://github.com/TheExplainthis/ChatGPT-Discord-Bot/releases/)
 
-</div>
 
 ChatGPT is integrated with Discord, allowing teams to collaborate, communicate, and be more efficient. By following the installation steps below, you too can import ChatGPT into your Discord.
 
