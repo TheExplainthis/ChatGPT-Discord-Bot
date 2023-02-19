@@ -11,7 +11,8 @@ class ChatGPT:
         prompt = text if self.memory is None else f'{self.memory.get(user_id)}\n\n{text}'
         response = self.model.text_completion(f'{prompt} <|endoftext|>')
         if self.memory is not None:
-            self.memory.append(user_id, [prompt, response])
+            self.memory.append(user_id, prompt)
+            self.memory.append(user_id, response)
         return response
 
     def clean_history(self, user_id: str) -> None:
