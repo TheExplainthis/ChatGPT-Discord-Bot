@@ -17,10 +17,11 @@ class Memory(MemoryInterface):
         self.storage = defaultdict(list)
 
     def append(self, user_id: str, text: str) -> None:
-        self.storage[user_id].append(text) 
+        self.storage[user_id].append(text)
 
     def get(self, user_id: str) -> str:
-        return '\n\n'.join(self.storage.get(user_id, [])[-10:])
+        HISTORY_MESSAGE_COUNT = 3
+        return '\n\n'.join(self.storage.get(user_id, [])[-HISTORY_MESSAGE_COUNT:]) 
 
     def remove(self, user_id: str) -> None:
         self.storage[user_id] = []
