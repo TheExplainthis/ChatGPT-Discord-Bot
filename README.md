@@ -84,7 +84,7 @@ ChatGPT 串接到 Discord 上面，使得團隊在協作、溝通、效率上都
 | --- | ----- |
 | `/chat` | 在輸入框直接輸入 `/chat` 會後綴 `message` 直接輸入文字，即可調用 ChatGPT 模型。|
 | `/reset` | ChatGPT 會記住前十次的問答紀錄，調用此指令則會清除。|
-| `/imagine` | 在輸入框輸入 `/imagine` 會後綴 `prompt` 直接輸入文字，會調用 DALL·E 2 模型，即可生成圖像。|
+| `/imagine` | 在輸入框輸入 `/imagine` 會後綴 `prompt` 直接輸入文字，會調用 `Text to Image` 模型，即可生成圖像。|
 
 
 ## 相關專案
