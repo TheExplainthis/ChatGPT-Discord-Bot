@@ -78,11 +78,11 @@ By importing the ChatGPT bot into every channel on Discord, simply enter `/chat`
 
 
 ## Commands
-| Command | Alias | Description |
-| --- | ---- |----- |
-| Text Completion | `/chat` |  Type `/chat` in the input box followed by `message` to call the ChatGPT model and generate text.|
-|Clean History | `/reset` | ChatGPT remembers the last ten questions and answers. Calling this command will clear the history.|
-|Image Generation | `/imagine` | Type `/imagine` in the input box followed by `prompt` to call the DALL·E 2 model and generate an image.|
+| Command | Description |
+| --- | ----- |
+| `/chat` |  Type `/chat` in the input box followed by `message` to call the ChatGPT model and generate text.|
+| `/reset` | ChatGPT remembers the last ten questions and answers. Calling this command will clear the history.|
+| `/imagine` | Type `/imagine` in the input box followed by `prompt` to call the DALL·E 2 model and generate an image.|
 
 ## Related Projects
 - [chatGPT-discord-bot](https://github.com/Zero6992/chatGPT-discord-bot)
