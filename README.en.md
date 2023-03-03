@@ -61,10 +61,10 @@ By importing the ChatGPT bot into every channel on Discord, simply enter `/chat`
             - value: `[obtained from step one above] sk-FoXXXX`
         2. Desired model:
             - key: `OPENAI_MODEL_ENGINE`
-            - value: `text-davinci-003`
-        3. Text limit returned by ChatGPT
-            - key: `OPENAI_MAX_TOKENS`
-            - value: `128`
+            - value: `gpt-3.5-turbo`
+        3. ChatGPT wants the assistant to play the role of a keyword (currently, no further usage instructions have been officially released, and players can test it themselves).
+            - key: `SYSTEM_MESSAGE`
+            - value: `You are a helpful assistant.`
         4. Discord Token:
             - key: `DISCORD_TOKEN`
             - value: `[obtained from step one above] MTA3NXXX`
