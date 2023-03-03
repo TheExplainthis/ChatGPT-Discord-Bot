@@ -7,6 +7,9 @@
 
 ChatGPT 串接到 Discord 上面，使得團隊在協作、溝通、效率上都能夠快速的提升，根據下面的安裝步驟，你也能在自己的 Discord 當中去導入 ChatGPT。
 
+## 更新
+- 2023/03/03 模型換成 chat completion: `gpt-3.5-turbo`
+
 
 ## 介紹
 在 Discord 裡的每個頻道中導入 ChatGPT Bot，只要在輸入框輸入 `/chat` 就會 有一個 `/chat message` 的關鍵字自動帶入，直接輸入文字即可與 ChatGPT 互動，如下圖所示：

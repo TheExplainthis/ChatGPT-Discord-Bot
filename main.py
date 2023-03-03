@@ -13,9 +13,9 @@ from src.server import keep_alive
 
 load_dotenv()
 
-models = OpenAIModel(api_key=os.getenv('OPENAI_API'), model_engine=os.getenv('OPENAI_MODEL_ENGINE'), max_tokens=int(os.getenv('OPENAI_MAX_TOKENS')))
+models = OpenAIModel(api_key=os.getenv('OPENAI_API'), model_engine=os.getenv('OPENAI_MODEL_ENGINE'))
 
-memory = Memory()
+memory = Memory(system_message=os.getenv('SYSTEM_MESSAGE'))
 chatgpt = ChatGPT(models, memory)
 dalle = DALLE(models)
 
@@ -26,10 +26,11 @@ def run():
 
     @client.tree.command(name="chat", description="Have a chat with ChatGPT")
     async def chat(interaction: discord.Interaction, *, message: str):
+        user_id = interaction.user.id
         if interaction.user == client.user:
             return
         await interaction.response.defer()
-        receive = chatgpt.get_response(interaction.user, message)
+        receive = chatgpt.get_response(user_id, message)
         await sender.send_message(interaction, message, receive)
 
     @client.tree.command(name="imagine", description="Generate image from text")

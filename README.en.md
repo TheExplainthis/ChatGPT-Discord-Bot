@@ -7,6 +7,9 @@
 
 ChatGPT is integrated with Discord, allowing teams to collaborate, communicate, and be more efficient. By following the installation steps below, you too can import ChatGPT into your Discord.
 
+## Update
+- 2023/03/03 Model change to chat completion: `gpt-3.5-turbo`
+
 ## Introduction
 By importing the ChatGPT bot into every channel on Discord, simply enter `/chat` in the input box and the keyword `/chat message` will automatically be inserted. You can then enter text to interact with ChatGPT, as shown in the figure below:
 ![Demo](https://github.com/TheExplainthis/ChatGPT-Discord-Bot/blob/main/demo/chatgpt-discord-bot-en.gif)
