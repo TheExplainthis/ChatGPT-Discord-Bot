@@ -90,6 +90,12 @@ ChatGPT 串接到 Discord 上面，使得團隊在協作、溝通、效率上都
 | `/imagine` | 在輸入框輸入 `/imagine` 會後綴 `prompt` 直接輸入文字，會調用 DALL·E 2 模型，即可生成圖像。|
 
 
+## 支持我們
+如果你喜歡這個專案，願意[支持我們](https://www.buymeacoffee.com/explainthis)，可以請我們喝一杯咖啡，這會成為我們繼續前進的動力！
+
+[<a href="https://www.buymeacoffee.com/explainthis" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="45px" width="162px" alt="Buy Me A Coffee"></a>](https://www.buymeacoffee.com/explainthis)
+
+
 ## 相關專案
 - [chatGPT-discord-bot](https://github.com/Zero6992/chatGPT-discord-bot)
 
