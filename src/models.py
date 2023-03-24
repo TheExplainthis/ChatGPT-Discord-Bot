@@ -30,5 +30,7 @@ class OpenAIModel(ModelInterface):
             )
         except Exception as e:
             print(e)
+            if str(e) == "Your request was rejected as a result of our safety system. Your prompt may contain text that is not allowed by our safety system.":
+                return "Your prompt may contain text that is not allowed by our safety system.\nContent Policy: https://labs.openai.com/policies/content-policy"
             return str(e)
         return response.data[0].url
