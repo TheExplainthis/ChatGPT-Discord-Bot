@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "==2.28.2"
+"discord.py" = "==2.1.1"
+python-dotenv = "==0.21.1"
+flask = "==2.2.3"
+openai = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.1"
