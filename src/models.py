@@ -17,7 +17,7 @@ class OpenAIModel(ModelInterface):
         self.image_size = image_size
 
     def chat_completion(self, messages) -> str:
-        return openai.Completion.create(
+        return openai.ChatCompletion.create(
             model=self.model_engine, messages=messages
         )
 
