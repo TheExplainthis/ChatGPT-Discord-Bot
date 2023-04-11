@@ -46,7 +46,7 @@ def run():
         user_id = interaction.user.id
         logger.info(f"resetting memory from {user_id}")
         try:
-            chatgpt.clean_history(user_id)
+            chatgpt.clean_history(str(user_id))
             await interaction.response.defer(ephemeral=True)
             await interaction.followup.send(f'> Reset ChatGPT conversation history < - <@{user_id}>')
         except Exception as e:

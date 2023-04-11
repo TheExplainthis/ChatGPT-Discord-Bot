@@ -17,17 +17,20 @@ class OpenAIModel(ModelInterface):
         self.image_size = image_size
 
     def chat_completion(self, messages) -> str:
-        response = openai.ChatCompletion.create(
-            model=self.model_engine,
-            messages=messages
+        return openai.ChatCompletion.create(
+            model=self.model_engine, messages=messages
         )
-        return response
 
     def image_generation(self, prompt: str) -> str:
-        response = openai.Image.create(
-            prompt=prompt,
-            n=1,
-            size=self.image_size
-        )
-        image_url = response.data[0].url
-        return image_url
+        try:
+            response = openai.Image.create(
+                prompt=prompt,
+                n=1,
+                size=self.image_size
+            )
+        except Exception as e:
+            print(e)
+            if str(e) == "Your request was rejected as a result of our safety system. Your prompt may contain text that is not allowed by our safety system.":
+                return "Your prompt may contain text that is not allowed by our safety system.\nContent Policy: https://labs.openai.com/policies/content-policy"
+            return str(e)
+        return response.data[0].url
