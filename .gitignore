@@ -117,5 +117,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
-
+# python
+*.pyc

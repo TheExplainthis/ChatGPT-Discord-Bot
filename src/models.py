@@ -1,3 +1,5 @@
+import os
+
 from typing import List, Dict
 import openai
 
@@ -13,6 +15,9 @@ class ModelInterface:
 class OpenAIModel(ModelInterface):
     def __init__(self, api_key: str, model_engine: str, image_size: str = '512x512'):
         openai.api_key = api_key
+        if os.getenv("OPENAI_API_BASE_URL", None):
+            openai.api_base = os.getenv('OPENAI_API_BASE_URL')
+
         self.model_engine = model_engine
         self.image_size = image_size
 
